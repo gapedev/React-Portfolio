@@ -1,1 +1,6 @@
-@use './hola.scss';
+/*** Variables ***/
+@import '../base/variables';
+
+/*** Componentes ***/
+
+@import './hola';
