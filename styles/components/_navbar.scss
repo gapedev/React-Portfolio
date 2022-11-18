@@ -1,0 +1,45 @@
+@use '../base' as *;
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $primary;
+    padding: 10px;
+
+    &_title {
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 5px;
+        }
+    }
+
+    &_menu {
+        ul {
+            display: flex;
+            gap: 10px;
+            font-size: 1.5rem;
+
+            li, a {
+                font-weight: bold;
+                color: $black;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 35px;
+                    left: 0;
+                    background-color: $black;
+                    height: 10px;
+                    transition: all 0.4s ease-in-out;
+                    width: 0;
+                }
+                &:hover:after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
