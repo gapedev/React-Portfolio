@@ -1,6 +1,2 @@
-/*Settings*/
-@use './base/reset';
-@use './base/variables';
-
 /*Components*/
-@use './components/index.scss';
+@use './components/' as *;
