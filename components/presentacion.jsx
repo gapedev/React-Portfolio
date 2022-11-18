@@ -7,13 +7,15 @@ const Presentacion = () => {
 
         <div className='presentacion'>
             <div className='presentacion_img'>
-                <Image src={gabi} alt="Yo" width={500} height={500} />
+                <Image src={gabi} alt="Yo" width={500} height={550} />
             </div>
             <div className='presentacion_text'>
                 <h1>¡Hola!</h1>
                 <h2>Soy Gabi Pérez, Front-End Developer.</h2>
                 <Boton 
                 text="Descargar CV"/>
+                <Boton
+                text="Prueba"/>
             </div>
         </div>
     )

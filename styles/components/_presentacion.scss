@@ -5,16 +5,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 560px;
-    padding: 50px;
-
-    &_img {
-        img {
-            object-fit:cover;
-            border-radius: 50%;
-        }
-    }
+    padding:10px 50px;
 
     &_text {
+        padding-top: 50px;
         h1 {
             background-color: $white;
             border-radius: 5px;
@@ -28,6 +22,10 @@
             font-size: 3.5rem;
             font-weight: 300;
             width: 70%;
+        }
+
+        button:last-child{
+            margin: 0 10px;
         }
     }
 }
