@@ -4,21 +4,27 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: $primary;
+    background-color: $white;
     padding: 10px;
 
     &_title {
-        h2 {
-            font-size: 1.5rem;
+        h2,a {
+            font-size: 2rem;
             font-weight: bold;
             letter-spacing: 5px;
+            color: $black;
+            transition: all ease-in-out .5s;
+
+            &:hover {
+                color: $primary;
+            }
         }
     }
 
     &_menu {
         ul {
             display: flex;
-            gap: 10px;
+            gap: 15px;
             font-size: 1.5rem;
 
             li, a {
@@ -29,10 +35,10 @@
                 &:after {
                     content: '';
                     position: absolute;
-                    top: 35px;
+                    top: 30px;
                     left: 0;
-                    background-color: $black;
-                    height: 10px;
+                    background-color: $primary;
+                    height: 5px;
                     transition: all 0.4s ease-in-out;
                     width: 0;
                 }

@@ -1,0 +1,33 @@
+@use '../base' as *;
+
+.presentacion {
+    background-color: $primary;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 560px;
+    padding: 50px;
+
+    &_img {
+        img {
+            object-fit:cover;
+            border-radius: 50%;
+        }
+    }
+
+    &_text {
+        h1 {
+            background-color: $white;
+            border-radius: 5px;
+            font-size: 4rem;
+            padding: 0px 10px;
+            width: 70%;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            width: 70%;
+        }
+    }
+}
