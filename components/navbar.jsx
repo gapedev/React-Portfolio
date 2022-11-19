@@ -10,7 +10,7 @@ const Navbar = () => {
             <div className="navbar_menu">
                 <ul>
                     <li><Link href='/'>Home</Link></li>
-                    <li><Link href='/about'>Currículum</Link></li>
+                    <li><Link href='/curriculum'>Currículum</Link></li>
                     <li><Link href='/portfolio'>Portfolio</Link></li>
                     <li><Link href='/proyectos'>Proyectos</Link></li>
                     <li><Link href='/contacto'>Contacto</Link></li>

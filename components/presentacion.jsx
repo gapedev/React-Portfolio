@@ -16,6 +16,9 @@ const Presentacion = () => {
                 text="Descargar CV"/>
                 <Boton
                 text="Prueba"/>
+                <div className='presentacion_about'>
+                <p>Conóceme</p>
+                </div>
             </div>
         </div>
     )
