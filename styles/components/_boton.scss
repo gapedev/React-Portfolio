@@ -8,4 +8,10 @@
     font-size: 1.3rem;
     font-weight: 500;
     cursor: pointer;
+    transition: $transition;
+
+    &:hover {
+        background-color: $black;
+        color: $white;
+    }
 }
