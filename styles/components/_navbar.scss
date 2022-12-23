@@ -2,20 +2,24 @@
 
 .navbar {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    background-color: $white;
-    padding: 10px;
+    padding: 40px;
+    gap: 50px;
 
     &_title {
-        h2,a {
+        h2 a {
+            font-family: $fontme;
+            background-color: $black;
+            border-radius: 50%;
             font-size: 2rem;
-            font-weight: bold;
-            letter-spacing: 5px;
-            color: $black;
-            transition: $transition;
+            font-weight: 300;
+            color: $white;
+            transition: $transitionme;
+            padding: 20px 30px;
 
             &:hover {
+                background-color: $white;
                 color: $primary;
             }
         }
@@ -23,22 +27,39 @@
 
     &_menu {
         ul {
+            border-bottom: 1px solid $border;
+            border-top: 1px solid $border;
             display: flex;
-            gap: 15px;
-            font-size: 1.5rem;
+            gap: 25px;
+            font-size: 1.3rem;
 
             li, a {
-                font-weight: bold;
+                text-transform: uppercase;
                 color: $black;
+                padding: 15px 0;
                 position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0px;
+                    left: 0;
+                    background-color: $primary;
+                    height: 3px;
+                    transition: $transition;
+                    width: 0;
+                }
+                &:hover:before {
+                    width: 100%;
+                }
 
                 &:after {
                     content: '';
                     position: absolute;
-                    top: 30px;
+                    bottom: 0;
                     left: 0;
                     background-color: $primary;
-                    height: 5px;
+                    height: 3px;
                     transition: $transition;
                     width: 0;
                 }

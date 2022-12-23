@@ -1,0 +1,22 @@
+@use '../base' as *;
+
+.separator {
+    display: flex;
+    align-items: center;
+
+    &_line {
+        background-color: $primary;
+        height: 1px;
+        width: 100%;
+    }
+
+    &_text {
+        white-space: nowrap;
+        padding: 0 30px;
+
+        h2 {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -1,21 +1,17 @@
-import Image from 'next/image';
-import gabi from '../public/img/gabi.png';
-
+import Separator from "../components/separator";
+import Circle from "../components/circle";
 
 const About = () => {
     return (
-
-        <div className="about">
+        <div className="container about">
+            <Separator 
+        text="Sobre Mí"/>
+            <Circle
+            src='/img/foto-gabi.jpg'
+            alt='Mi foto' />
             <div className="about_text">
-                <h3>Sobre Mí</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, perferendis? Delectus deserunt soluta nostrum dignissimos nihil quas fuga at magni?</p>
-            </div>
-            <div className='about_img'>
-                <Image src={gabi} alt="yo" width={300} height={300} />
-            </div>
-            <div className="about_text">
-                <h3>Cosas</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio aperiam enim eius nam perspiciatis aspernatur corrupti debitis, sit rerum praesentium.</p>
+                <h3>Hola! me llamo gabi, Front-End Developer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, harum. Asperiores veritatis provident vero, dolorum veniam at deserunt reiciendis iste.</p>
             </div>
         </div>
     )
