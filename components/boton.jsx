@@ -1,7 +1,7 @@
 
 const Boton = ({text, icon}) => {
    return (
-    <button className="boton" onClick= "window.location.href='../public/img/gabi.png';">{text}</button>
+      <button className="boton" onClick= "window.location.href='../public/img/gabi.png';">{text}</button>
    )
 }
 
